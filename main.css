@@ -1,23 +1,23 @@
 body{
     
-    background-color:green;
+    background-color: rgb(196, 120, 231);
     color:white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 100%;
 }
-
-p{
-    font-size: 30px;
-}
-h1 {
+h1{
     font-size: 25px;
 }
 
+
 #snakeLogo{
-    width: 20%;
+    width: 8%;
 
 }
-#cat1{
-    width:20px;
+
+#logoAndTitle, header, nav,#introAndMainImage{
+    display:flex;
+    align-items: center;
 }
+
