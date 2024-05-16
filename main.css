@@ -20,4 +20,7 @@ h1{
     display:flex;
     align-items: center;
 }
+#cat1{
+    width: 50px;
+}
 
