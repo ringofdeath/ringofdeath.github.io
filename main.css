@@ -40,17 +40,20 @@ nav{
 
 
 .menuSelection{
-    z-index: 0;
+    /*Layers must be changed when overlapping elements as the linsk won't work properbly because the 
+    broswer won't know what it should be clicking on.
+    */
+    z-index: 1;
     width: 200px;
     height: 150px;
     background-color: lightblue;
     padding: 10px;
     margin-top: 10px;
-    position:fixed;
+    position:absolute;
 }
 .menuOptions{
     margin-right: 20px;
-    text-decoration: wavy;
+    text-decoration: none;
     text-transform: uppercase;
 }
 a{
