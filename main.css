@@ -1,26 +1,74 @@
 body{
-    
-    background-color: rgb(196, 120, 231);
-    color:white;
+    /*UI Pallete used is the American Palette on https://flatuicolors.com/palette/us*/
+    background-color: #b2bec3;
+    color:#2d3436;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 100%;
+    padding: 20px;
+
+}
+header{
+    padding: 20px;
 }
 h1{
     font-size: 25px;
 }
-
-
-#snakeLogo{
-    width: 8%;
-
-}
-
-#logoAndTitle, header, nav,#introAndMainImage{
+#logoAndTitle, header, nav,dropdownButton{
+    z-index: 0;
+    position:sticky;
     display:flex;
     align-items: center;
+    /*Display flex is NEEDEd to use justify content*/
+    justify-content:space-around;
 }
-#cat1{
-    width: 50px;
+#logoAndTitle{
+    width: 250px;  
 }
+#otterlogo{
+    width: 50%;
+}
+.copyrightLogo{
+    font-size: 10px;
+    width: 300px;
+}
+nav{
+    width: 350px;
+}
+
+/*Creation of first attempt at manyprimates homepage.*/
+
+
+.menuSelection{
+    z-index: 0;
+    width: 200px;
+    height: 150px;
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 10px;
+    position:fixed;
+}
+.menuOptions{
+    margin-right: 20px;
+    text-decoration: wavy;
+    text-transform: uppercase;
+}
+a{
+    cursor: pointer;
+}
+#displayText{
+    position: relative;
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.visible {
+    display: block;
+}
+.hidden{
+    display: none           ;
+}
+
+
+
 

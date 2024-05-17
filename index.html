@@ -3,50 +3,65 @@
     <head>
         <link href="main.css" rel="stylesheet">
         <meta charset="utf-8">
-        <meta name="viewport" contenet="width =device-width">
+        <meta name="viewport" content="width =device-width">
         <title>
                 The greatest website ever.
         </title>
     </head>
+    <div class="menuBar">
+        <button id="dropdownButton">
+            MENU
+        </button>
+
+        <div class="menuSelection hidden" >
+            <!--The use of classes is to be able to be able to change mutiple elements 
+             with that class name, but ID are unqiue to one singular element in your code.
+             so in this context I should use class menu selection as a means to create simlar 
+             'menuselection' classes for each page. Like if you go to page 2 it will be the same
+             code as page one menu selection.
+            -->
+            <div class="menuOptions">
+                <a href="index.html">Homepage</a>
+                <a href="page2.html">Page 2</a>
+                <a href="nestedMenu.html">Nested Menu Practice</a>
+            </div>
+
+
+            <p id="displayText">This dropdown menu is more primative in style but is coded using javascript
+                so now the user can click on the button and a coding function in JS is called.
+            </p>
+            
+        </div>
 
     <body>
         
         <header>
-            <div id='logoAndTitle'>
-                <!--This is how to make a linkable logo.-->
-                <!--<a href="https://manyprimates.github.io" id="sidelogo"><img src="/assets/images/mp_logo300.png" alt=""></a>-->
-                <img id ="snakeLogo" src="https://cdn.pixabay.com/photo/2023/01/13/14/58/snake-7716269_960_720.jpg"/>
-                
-                <p>
-                    Website Name :O
+            <div id="logoAndTitle">
+                <a href="index.html">
+                    <img id="otterlogo" src="otterlogo.png"/>
+                </a> <!-- CC BY-NC-ND 3.0 Deed -->
+
+                <h1>
+                    Many Otters.
+                </h1>
+
+                <p class="copyrightLogo"> 
+                    CC BY-NC-ND 3.0 Deed 
                 </p>
-                
             </div>
             <nav>
-                <a href="page2.html">Link 1.</a>
-                <a href="https://www.youtube.com/">This link goes to https://www.youtube.com/. Note this does actually link to youtube.com</a>
-
+                <a href="page2.html">Social Buttons </a>
+                <a href="nestedMenu.html">Link to Menu Practice.</a>
             </nav>
         </header>
-    <div id="introAndMainImage">
-        <div>
-            <h1>
-                Amazing Cat Picture next to me.
-            </h1>
-            
-                <p>
-                    Desc: Check out this cat. Addtional Try to resize your window and see what happens to the font.
-                </p>
-        </div>
-                <img id='cat1' src="cat1.jpg"/>
+        <!--Attempt at Many Primates.github Front Homepage.-->
+
         
-    </div>
-        <button>
-            <a href="page2.html">
-                CLICK ME.
-            </a>
-        </button>
+            <script src="scriptMenu.js"></script>
+        </div>
+
+
 
     </body>
-
+</html>
 
