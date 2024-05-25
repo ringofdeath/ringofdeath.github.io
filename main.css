@@ -1,91 +1,68 @@
 body{
     /*UI Pallete used is the American Palette on https://flatuicolors.com/palette/us*/
-    background-color: #dfe6e9;
-    color:#2d3436;
+    background-color: #170b0b;
+    color:#c9c3db;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 99%;
+    height: 100%;
     padding: 20px;
 
 }
 header{
+    margin-right: 0px;
     
-    background-color: #b2bec3;
+    background-color: #342173;
     border-radius: 10px;
 }
 h1{
-    font-size: 20px;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    
-    margin: 5px;
+    font-size: 25px;
 }
-
-h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#logoAndTitle,header, nav,dropdownButton{
+#logoAndTitle, header, nav{
     z-index: 0;
-    position: relative;
+    position:sticky;
     display:flex;
     align-items: center;
     /*Display flex is NEEDEd to use justify content*/
     justify-content:space-around;
 }
 #logoAndTitle{
-    width: 20px; 
-    margin: 20px;
-    padding: 15px;
-    
+    width: 250px;  
 }
 #otterlogo{
-    width: 70px;
-}
-.copyrightLogo{
-    font-size: 10px;
-    width: 300px;
-}
-#contactUs{
-    margin-right: 30px ;
-}
-#contactHeader{
-   align-items: center;
-   display: flex;
-}
-.contactIcons{
-    width: 10%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-    height: 10%;
+    width: 50%;
 }
 
 nav{
-    width: 300px;
+    width: 350px;
 }
 
-.wrapper{
-    display: flex;
-    align-items: center;
-}
 
-/*Creation of first attempt at manyprimates homepage.*/
 
 #dropdownButton{
-    background-color: rgb(147, 233, 233);
-    border: none;
-    border-style: solid;
-    border-color:rgb(147, 233, 233);
-
-    width: 130px;
+    
+    height: auto;
+    
+    border: solid;
+    border-color:rgb(50, 107, 107);
+    background-color: rgb(50, 107, 107);
+    border-radius:50%;
+    width: 40px;
     height: 40px;
+    display:inline-block;
+
     margin-left: 10px;
     margin-bottom: 5px;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-    border-radius: 10px;
 }
 #dropdownButton:hover {
-    background-color: rgb(137, 223, 223);
-    border-color: rgb(137, 223, 223);
+    background-color: rgb(65, 125, 125);
+    border-color: rgb(65, 125, 125);
 }
 #dropdownButton:active{
     background-color: rgb(128, 210, 210);
     border-color: rgb(128, 210, 210);
+}
+.menuBar{
+    width: 1900x;
 }
 
 
@@ -102,7 +79,7 @@ nav{
     position:absolute;
     border-style:groove;
     border-color: #767879;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 .menuOptions{
     margin-right: 20px;
@@ -113,12 +90,13 @@ nav{
 }
 a{
     cursor: pointer;
+    color: #384df2;
 }
-#displayText{
-    position: relative;
-    margin-top: 25px;
-    font-size: 12px;
+a:hover{
+    color: #5b6ef9;
+    
 }
+
 
 .visible {
     display: block;
@@ -126,24 +104,7 @@ a{
 .hidden{
     display: none           ;
 }
-/*Body Text */
 
-#introText{
-    background-color: whitesmoke;
-    border: solid;
-    border-radius: 8px;
-    border-color: #b2bec3;
-    margin:auto;
-    margin-top: 30px;
-    
-    width: 50%;
-    color: #00b894;
-    padding: 15px;
-}
-.mainText{
-    color: black;
-    text-indent: 35px;
-    
-}
+
 
 
