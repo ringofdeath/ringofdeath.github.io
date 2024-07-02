@@ -1,1 +1,110 @@
+body{
+  /*UI Pallete used is the American Palette on https://flatuicolors.com/palette/us*/
+  background-color: #170b0b;
+  color:#c9c3db;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 99%;
+  height: 100%;
+  padding: 20px;
+
+}
+header{
+  margin-right: 0px;
+  
+  background-color: #342173;
+  border-radius: 10px;
+}
+h1{
+  font-size: 25px;
+}
+#logoAndTitle, header, nav{
+  z-index: 0;
+  position:sticky;
+  display:flex;
+  align-items: center;
+  /*Display flex is NEEDEd to use justify content*/
+  justify-content:space-around;
+}
+#logoAndTitle{
+  width: 250px;  
+}
+#otterlogo{
+  width: 50%;
+}
+
+nav{
+  width: 350px;
+}
+
+
+
+#dropdownButton{
+  
+  height: auto;
+  
+  border: solid;
+  border-color:rgb(50, 107, 107);
+  background-color: rgb(50, 107, 107);
+  border-radius:50%;
+  width: 40px;
+  height: 40px;
+  display:inline-block;
+
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+#dropdownButton:hover {
+  background-color: rgb(65, 125, 125);
+  border-color: rgb(65, 125, 125);
+}
+#dropdownButton:active{
+  background-color: rgb(128, 210, 210);
+  border-color: rgb(128, 210, 210);
+}
+.menuBar{
+  width: 1900x;
+}
+
+
+.menuSelection{
+  /*Layers must be changed when overlapping elements as the linsk won't work properbly because the 
+  broswer won't know what it should be clicking on.
+  */
+  z-index: 1;
+  width: 200px;
+  height: 150px;
+  background-color: #bcc0c2;
+  padding: 20px;
+  margin-top: 10px;
+  position:absolute;
+  border-style:groove;
+  border-color: #767879;
+  border-radius: 15px;
+}
+.menuOptions{
+  margin-right: 20px;
+  text-decoration:none;
+  text-transform: uppercase;
+  line-break:loose;
+  color: #a29bfe;
+}
+a{
+  cursor: pointer;
+  color: #384df2;
+}
+a:hover{
+  color: #5b6ef9;
+  
+}
+
+
+.visible {
+  display: block;
+}
+.hidden{
+  display: none           ;
+}
+
+
+
 
